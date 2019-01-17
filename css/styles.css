@@ -1,0 +1,14 @@
+body {
+	min-height: 100vh; /* Make body fills the entire <html> container */
+	background-color: #888;
+	background-image: url('https://unsplash.it/g/1500/800?random&'); /* Random images service */
+}
+
+h1 {
+	color: whitesmoke;
+}
+
+div {
+	background-color: #333;
+	border-radius: 10px;
+}
