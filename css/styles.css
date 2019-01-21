@@ -6,11 +6,12 @@ body {
 
 .login-form {
 	height: auto;
+	display: inline-block;
 	background: #222;
 	color: mintcream;
 	padding: 1em;
 	padding-bottom: 20px;
-	margin-top: 25vh;
+	margin-top: 20vh;
 	border-radius: 10px;
 }
 
@@ -22,5 +23,5 @@ body {
 .footer {
 	position: absolute;
 	bottom: 1%;
-	margin: 10%
+	margin: 1%
 }
