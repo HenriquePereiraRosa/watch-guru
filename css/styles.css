@@ -2,6 +2,7 @@ body {
 	min-height: 100vh; /* Make body fills the entire <html> container */
 	background-color: #888;
 	background-image: url('https://unsplash.it/g/1500/800?random&'); /* Random images service */
+	background-size: cover;
 }
 
 .login-form {
@@ -9,7 +10,7 @@ body {
 	display: inline-block;
 	background: #222;
 	color: mintcream;
-	padding: 1em;
+	padding: 2%;
 	padding-bottom: 20px;
 	margin-top: 20vh;
 	border-radius: 10px;
@@ -20,8 +21,10 @@ body {
 	margin-bottom: 4%;
 }
 
-.footer {
-	position: absolute;
-	bottom: 1%;
-	margin: 1%
+.mine-footer {
+    font-size: 10pt;
+    height: 35px;
+    position: absolute;
+	bottom: 0;
+	width: 100%;
 }
