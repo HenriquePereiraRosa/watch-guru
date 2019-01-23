@@ -35,3 +35,7 @@ body {
 	min-width: 130px;
 	margin-right: 2vw;
 }
+
+.bold {
+	font-weight: bold;
+}
