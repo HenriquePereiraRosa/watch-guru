@@ -1,8 +1,12 @@
-body {
+.body-login {
 	min-height: 100vh; /* Make body fills the entire <html> container */
 	background-color: #888;
 	background-image: url('https://unsplash.it/g/1500/800?random&'); /* Random images service */
 	background-size: cover;
+}
+
+.body-home {
+	background-color:rgba(42, 48, 56, 0.185);
 }
 
 .login-form {
