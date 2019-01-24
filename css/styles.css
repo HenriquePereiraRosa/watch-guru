@@ -39,3 +39,17 @@ body {
 .bold {
 	font-weight: bold;
 }
+
+.dropdown1 {
+	background-color: #555;
+	width: 300px;
+}
+.dropdown1-a {
+	color: whitesmoke;
+	padding: 0%;
+}
+
+.dropdown1-a:hover {
+	background-color: whitesmoke;
+	color: #333;
+}
