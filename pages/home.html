@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
@@ -144,7 +144,7 @@
 						<td>Legolas</td>
 						<td>1000</td>
 						<td>Jorge</td>
-						<td><span class="badge badge-primary">Envenenado</span></td>
+						<td><span class="badge badge-success">Envenenado</span></td>
 						<td>
 							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
 							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
@@ -200,9 +200,49 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<div class="form-group">
-						<label>Código da OS</label>
-						<p>#####</p>
+					<div class="row">
+						<div class="form-group col-12">
+							<label>Código da OS</label>
+							<p>#####</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label class="control-label">Cliente</label>
+							<select id="Cliente" class="form-control">
+								<option value="">Selecione...</option>
+								<option value="1">Légolas</option>
+								<option value="2">Gandalf Cinzento</option>
+								<option value="3">Sauron</option>
+							</select>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label class="control-label">Serviços</label>
+							<select id="Servicos" class="form-control">
+								<option value="">Selecione...</option>
+								<option value="1">Conjuro de Feitiço</option>
+								<option value="2">Reparo por Ferreiro</option>
+								<option value="3">Reparo em Armadura</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-12">
+							<label class="control-label" for="Observacao">Observação</label>
+							<textarea name="Observação" class="form-control" id="Observacao" cols="30" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-12">
+							<label class="control-label" for="Valor">Valor</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="addon-value">R$</span>
+								</div>
+								<input type="text" class="form-control" placeholder="0,00" aria-label="Valor" aria-describedby="addon-value">
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -211,7 +251,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> <!-- END Modal -->
 
 </body>
 
