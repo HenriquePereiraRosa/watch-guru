@@ -1,3 +1,7 @@
+
+.size-16px {
+	font-size: 16px;
+}
 .body-login {
 	min-height: 100vh; /* Make body fills the entire <html> container */
 	background-color: #888;

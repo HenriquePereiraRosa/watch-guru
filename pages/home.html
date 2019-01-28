@@ -112,19 +112,19 @@
 
 		<!-- =================== Data Table ==================== -->
 		<div class="table-responsive">
-		<table class="table">
-			<thread class="thead-dark">
-				<tr>
-					<th>Cod.</th>
-					<th>Data</th>
-					<th>Cliente</th>
-					<th>Valor</th>
-					<th>Funcionário</th>
-					<th>Status</th>
-					<th>Actions</th>
-				</tr>
-			</thread>
-			<tbody class="table table-striped table-hover">
+			<table class="table">
+				<thread class="thead-dark">
+					<tr>
+						<th>Cod.</th>
+						<th>Data</th>
+						<th>Cliente</th>
+						<th>Valor</th>
+						<th>Funcionário</th>
+						<th>Status</th>
+						<th>Actions</th>
+					</tr>
+				</thread>
+				<tbody class="table table-striped table-hover">
 					<tr>
 						<td>01</td>
 						<td>01/08/200</td>
@@ -133,22 +133,22 @@
 						<td>Jorge</td>
 						<td><span class="badge badge-primary">Enfeitiçado</span></td>
 						<td>
-							<a href=""><i class="material-icons text-dark">check_circle_outline</i></a>
-							<a href=""><i class="material-icons text-dark">edit</i></a>
-							<a href=""><i class="material-icons text-danger">delete</i></a>
+							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
+							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
+							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
 						</td>
 					</tr>
 					<tr>
 						<td>01</td>
 						<td>01/08/200</td>
-						<td>Gandalf</td>
-						<td>50</td>
+						<td>Legolas</td>
+						<td>1000</td>
 						<td>Jorge</td>
-						<td><span class="badge badge-primary">Enfeitiçado</span></td>
+						<td><span class="badge badge-primary">Envenenado</span></td>
 						<td>
-							<a href=""><i class="material-icons text-dark">check_circle_outline</i></a>
-							<a href=""><i class="material-icons text-dark">edit</i></a>
-							<a href=""><i class="material-icons text-danger">delete</i></a>
+							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
+							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
+							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
 						</td>
 					</tr>
 					<tr>
@@ -159,18 +159,58 @@
 						<td>Jorge</td>
 						<td><span class="badge badge-danger">Enfeitiçado</span></td>
 						<td>
-							<a href=""><i class="material-icons text-dark">check_circle_outline</i></a>
-							<a href=""><i class="material-icons text-dark">edit</i></a>
-							<a href=""><i class="material-icons text-danger">delete</i></a>
+							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
+							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
+							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
 						</td>
 					</tr>
-			</tbody>
+				</tbody>
 
 
-		</table>
-	</div> <!-- End table responsive-->
+			</table>
+		</div> <!-- End table responsive-->
 
+		<div class="row">
+			<div class="col-md-6">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Nova Ordem de Serviço</button>
+			</div>
+			<div class="col-md-6">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item"><a class="page-link" href=""><i class="material-icons size-16px">keyboard_arrow_left</i></a></li><!-- size-16px to make equally size -->
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href=""><i class="material-icons size-16px">keyboard_arrow_right</i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 
+	</div> <!-- End Body Container -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal1Label">Nova Ordem de Serviço</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Código da OS</label>
+						<p>#####</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary">Salvar</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
