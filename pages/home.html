@@ -32,227 +32,99 @@
 
 <body class="body-home">
 
-	<!-- ================= Nav Bar Menu ====================== -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="home.html">
-				<img class="logo" src="../resource/img/png/watchguru.png" alt="watch_guru"></img>
-			</a>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
-		 aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="menu">
-			<ul class="nav navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Ordens de Serviço<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Clientes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Funcionários</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Serviços</a>
-				</li>
-			</ul>
-
-			<div class="dropdown show navbar-right">
-				<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-				 aria-haspopup="true" aria-expanded="false">
-					Minha Conta
-				</a>
-
-				<div class="dropdown-menu dropdown1 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-					<div class="row">
-						<div class="col-5 account-img"><img class="img-fluid float-right" src="https://api.adorable.io/avatars/100/img.png"></div>
-						<div class="col-7 align-middle">
-							<a class="dropdown-item dropdown1-a bold" href="#">User Name</a>
-							<a class="dropdown-item dropdown1-a" href="#">Alterar Perfil</a>
-							<a class="dropdown-item dropdown1-a" href="login.html">Sair</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</nav>
-
 	<div class="container">
-
-		<!-- ============ BreadCumb (Navigation Map) ============= -->
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">Início</a></li>
-				<li class="breadcrumb-item"><a href="#">Ordens de Serviço</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Pesquisa</li>
-			</ol>
-		</nav>
-
-		<!-- =================== Search Field ==================== -->
-		<div class="row">
-			<div class="col-sm-12 col-md-6">
-				<h1>Ordens de Serviço</h1>
+		<!-- ================= Nav Bar Menu ====================== -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html">
+					<img class="logo" src="../resource/img/png/watchguru.png" alt="watch_guru"></img>
+				</a>
 			</div>
-			<div class="col-sm-12 col-md-6">
-				<div class="input-group">
-					<input type="text" name="busca" class="form-control" placeholder="Pesquisa por nome">
-					<div class="input-group-append">
-						<button class="btn btn-outline-secondary btn-padding-bot-0" type="button">
-							<i class="material-icons">search</i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<!-- =================== Data Table ==================== -->
-		<div class="table-responsive">
-			<table class="table">
-				<thread class="thead-dark">
-					<tr>
-						<th>Cod.</th>
-						<th>Data</th>
-						<th>Cliente</th>
-						<th>Valor</th>
-						<th>Funcionário</th>
-						<th>Status</th>
-						<th>Actions</th>
-					</tr>
-				</thread>
-				<tbody class="table table-striped table-hover">
-					<tr>
-						<td>01</td>
-						<td>01/08/200</td>
-						<td>Gandalf</td>
-						<td>50</td>
-						<td>Jorge</td>
-						<td><span class="badge badge-primary">Enfeitiçado</span></td>
-						<td>
-							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
-							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
-							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>01</td>
-						<td>01/08/200</td>
-						<td>Legolas</td>
-						<td>1000</td>
-						<td>Jorge</td>
-						<td><span class="badge badge-success">Envenenado</span></td>
-						<td>
-							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
-							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
-							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>01</td>
-						<td>01/08/200</td>
-						<td>Hobbit</td>
-						<td>50</td>
-						<td>Jorge</td>
-						<td><span class="badge badge-danger">Enfeitiçado</span></td>
-						<td>
-							<a href="" data-toggle="tooltip" title="Aprovar"><i class="material-icons md-18 text-dark">check_circle_outline</i></a>
-							<a href="" data-toggle="tooltip" title="Editar"><i class="material-icons md-18 text-dark">edit</i></a>
-							<a href="" data-toggle="tooltip" title="Deletar"><i class="material-icons md-18 text-danger">delete</i></a>
-						</td>
-					</tr>
-				</tbody>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="ordens.html">Ordens de Serviço</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Funcionários</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Serviços</a>
+					</li>
+				</ul>
 
+				<div class="dropdown show navbar-right">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+						Minha Conta
+					</a>
 
-			</table>
-		</div> <!-- End table responsive-->
-
-		<div class="row">
-			<div class="col-md-6">
-				<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Nova Ordem de Serviço</button>
-			</div>
-			<div class="col-md-6">
-				<nav aria-label="Page navigation example">
-					<ul class="pagination">
-						<li class="page-item"><a class="page-link" href=""><i class="material-icons size-16px">keyboard_arrow_left</i></a></li><!-- size-16px to make equally size -->
-						<li class="page-item"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item"><a class="page-link" href=""><i class="material-icons size-16px">keyboard_arrow_right</i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-
-	</div> <!-- End Body Container -->
-
-	<!-- Modal -->
-	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button class="close" type="button" data-dismiss="modal"></button>
-					<h5 class="modal-title" id="modal1Label">Nova Ordem de Serviço</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="form-group col-12">
-							<label>Código da OS</label>
-							<p>#####</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-6">
-							<label class="control-label">Cliente</label>
-							<select id="Cliente" class="form-control">
-								<option value="">Selecione...</option>
-								<option value="1">Légolas</option>
-								<option value="2">Gandalf Cinzento</option>
-								<option value="3">Sauron</option>
-							</select>
-						</div>
-
-						<div class="form-group col-md-6">
-							<label class="control-label">Serviços</label>
-							<select id="Servicos" class="form-control">
-								<option value="">Selecione...</option>
-								<option value="1">Conjuro de Feitiço</option>
-								<option value="2">Reparo por Ferreiro</option>
-								<option value="3">Reparo em Armadura</option>
-							</select>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-12">
-							<label class="control-label" for="Observacao">Observação</label>
-							<textarea name="Observação" class="form-control" id="Observacao" cols="30" rows="3"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group col-12 invalid">
-							<label class="control-label" for="Valor">Valor</label>
-							<div class="input-group">
-								<div class="input-group-prepend">
-									<span class="input-group-text" id="addon-value">R$</span>
-								</div>
-								<input type="text" class="form-control" placeholder="0,00" aria-label="Valor" aria-describedby="addon-value">
+					<div class="dropdown-menu dropdown1 dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+						<div class="row">
+							<div class="col-5 account-img"><img class="img-fluid float-right" src="https://api.adorable.io/avatars/100/img.png"></div>
+							<div class="col-7 align-middle">
+								<a class="dropdown-item dropdown1-a bold" href="#">User Name</a>
+								<a class="dropdown-item dropdown1-a" href="#">Alterar Perfil</a>
+								<a class="dropdown-item dropdown1-a" href="login.html">Sair</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-					<button type="button" class="btn btn-primary">Salvar</button>
-				</div>
+
 			</div>
+
+		</nav>
+
+		<div class="container">
+
+			<!-- ============ BreadCumb (Navigation Map) ============= -->
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">Home</li>
+				</ol>
+			</nav>
+
+
+			<!-- ============ Welcome) ============= -->
+			<h3>Welcome!</h3>
+
+			<!-- ============ Carousel ============= -->
+			<div id="id-carouselIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#id-carouselIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#id-carouselIndicators" data-slide-to="1"></li>
+					<li data-target="#id-carouselIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner text-center">
+					<div class="carousel-item active">
+						<img src="https://unsplash.it/800/600?random" class="d-block w-75" alt="Ice_Mountain">
+					</div>
+					<div class="carousel-item">
+						<img src="https://unsplash.it/801/600?random" class="d-block w-75" alt="Landscape">
+					</div>
+					<div class="carousel-item">
+						<img src="https://unsplash.it/799/600?random" class="d-block w-75" alt="handling_camera">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#id-carouselIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#id-carouselIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div> <!-- END Carousel -->
+
 		</div>
-	</div> <!-- END Modal -->
 
 </body>
 
